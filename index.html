@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kavya Mehta | Portfolio</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:#111827;
+padding:15px 10%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+color:#38bdf8;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:20px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+}
+
+nav ul li a:hover{
+color:#38bdf8;
+}
+
+.hero{
+padding-top:120px;
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+gap:50px;
+flex-wrap:wrap;
+padding-left:10%;
+padding-right:10%;
+}
+
+.hero img{
+width:280px;
+height:280px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid #38bdf8;
+}
+
+.hero-text{
+max-width:600px;
+}
+
+.hero-text h1{
+font-size:50px;
+margin-bottom:10px;
+}
+
+.hero-text span{
+color:#38bdf8;
+}
+
+.hero-text p{
+margin-top:15px;
+line-height:1.8;
+color:#d1d5db;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:#38bdf8;
+color:black;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+}
+
+section{
+padding:80px 10%;
+}
+
+.title{
+text-align:center;
+font-size:35px;
+color:#38bdf8;
+margin-bottom:40px;
+}
+
+.card{
+background:#1e293b;
+padding:25px;
+border-radius:15px;
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:20px;
+}
+
+.skill{
+background:#1e293b;
+padding:20px;
+text-align:center;
+border-radius:10px;
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.project{
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+}
+
+.socials{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+margin-top:20px;
+}
+
+.socials a{
+text-decoration:none;
+color:white;
+background:#1e293b;
+padding:12px 20px;
+border-radius:30px;
+}
+
+.socials a:hover{
+background:#38bdf8;
+color:black;
+}
+
+footer{
+background:#111827;
+padding:20px;
+text-align:center;
+margin-top:40px;
+}
+
+@media(max-width:768px){
+
+.hero{
+text-align:center;
+}
+
+.hero-text h1{
+font-size:35px;
+}
+
+nav ul{
+display:none;
+}
+
+}
+</style>
+</head>
+<body>
+
+<nav>
+<div class="logo">Kavya Mehta</div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+
+<img src="kavya.jpg" alt="Kavya Mehta">
+
+<div class="hero-text">
+<h1>Hi, I'm <span>Kavya Mehta</span></h1>
+
+<h3>Diploma ICT Student</h3>
+
+<p>
+I am Kavya Mehta from Ahmedabad, currently pursuing a Diploma in Information and Communication Technology (ICT) at Government Polytechnic for Girls. I am passionate about coding, web development, GitHub projects, content creation, and creative editing.
+</p>
+
+<a href="#contact" class="btn">Contact Me</a>
+
+</div>
+</section>
+
+<section id="about">
+
+<h2 class="title">About Me</h2>
+
+<div class="card">
+<p>
+Hello! I'm Kavya Mehta from Ahmedabad, Gujarat. I am currently studying Diploma ICT at Government Polytechnic for Girls. I enjoy coding, creating websites, exploring GitHub, learning new technologies, video editing, and sharing content online. My goal is to become a skilled software and web developer.
+</p>
+
+<div class="socials">
+
+<a href="https://www.youtube.com/@Kavyamehta-k11" target="_blank">
+YouTube
+</a>
+
+<a href="https://github.com/kavya123-sys" target="_blank">
+GitHub
+</a>
+
+<a href="#">
+LinkedIn
+</a>
+
+<a href="mailto:your-email@example.com">
+Email
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="title">Skills</h2>
+
+<div class="skills">
+
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">Java</div>
+<div class="skill">DBMS</div>
+<div class="skill">GitHub</div>
+<div class="skill">C Programming</div>
+<div class="skill">Video Editing</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2 class="title">Projects</h2>
+
+<div class="projects">
+
+<div class="project">
+<h3>Portfolio Website</h3>
+<p>Personal responsive portfolio website developed using HTML and CSS.</p>
+</div>
+
+<div class="project">
+<h3>GitHub Projects</h3>
+<p>Various learning projects uploaded on GitHub.</p>
+</div>
+
+<div class="project">
+<h3>College Projects</h3>
+<p>Projects created during Diploma ICT studies.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="title">Contact</h2>
+
+<div class="card">
+
+<p><strong>Name:</strong> Kavya Mehta</p>
+<p><strong>Location:</strong> Ahmedabad, Gujarat</p>
+<p><strong>Education:</strong> Diploma ICT</p>
+<p><strong>Institute:</strong> Government Polytechnic for Girls</p>
+
+<br>
+
+<p>
+YouTube:
+<a href="https://www.youtube.com/@Kavyamehta-k11" target="_blank">
+@Kavyamehta-k11
+</a>
+</p>
+
+<p>
+GitHub:
+<a href="https://github.com/kavya123-sys" target="_blank">
+github.com/kavya123-sys
+</a>
+</p>
+
+<p>
+LinkedIn:
+<a href="#">Add Your LinkedIn Link</a>
+</p>
+
+<p>
+Email:
+<a href="mailto:your-email@example.com">
+your-email@example.com
+</a>
+</p>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Kavya Mehta | Portfolio Website
+</footer>
+
+</body>
+</html>
